@@ -30,7 +30,7 @@ int	main(int argc, char **argv)
 	// 	i++;
 	// }
   Queue  q;
-   q. headPtr=NULL;
+   q.headPtr=NULL;
    q.tailPtr=NULL;
    q.size=0;
 
@@ -40,7 +40,7 @@ int	main(int argc, char **argv)
 		if (strcmp(argv[i], "x") == 0)
 		{
 			x = dequeue_struct(&q);
-			if (q.size != 0)
+			if (q.size + 1 != 0)
 				printf("dequeing %d\n", x);
 		}
 		else
